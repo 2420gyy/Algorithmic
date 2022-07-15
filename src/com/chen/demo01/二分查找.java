@@ -17,7 +17,7 @@ public class 二分查找 {
     }
 
     /*
-    1. 中位数
+    1. 中位数 L+（R-L)/2
     2. 数组分割
      */
     public static boolean dichotomy(int arr[],int num){
