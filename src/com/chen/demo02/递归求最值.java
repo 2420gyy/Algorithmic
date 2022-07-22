@@ -1,16 +1,19 @@
 package com.chen.demo02;/**
 *@Author: chenchen
 *@CreateTime: 2022-07-17  23:13
-*@Description: TODO
+*@Description: 在某一个范围求最值
 */
 public class 递归求最值 {
     public static void main(String[] args) {
-        int arr[] = {13,2,4,5,6,7,8,9,10,12};
+        int arr[] = {13,10,12};
         int max = getMax(arr, 0, arr.length-1);
         System.out.println(max);
     }
     public static int getMax(int []arr,int left,int right){
         // 取中点，分别递归左右两边，求最大的值
+        // 单次返回为根节点直接return，返回结果
+        // 二叉树的后序遍历。。。
+        //
         if(left == right){
             return arr[left];
         }
